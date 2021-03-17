@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Show pics</title>
+<link href="./components/css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <input type="button" value="Get" onclick="print_array()"/>
+    <input type="button" value="Clear" onclick="clear_variables()"/>
+    <div><img id="img1" src="#" alt="none"></div>
+    <div><img id="img2" src="#" alt="none"></div>
+</body>
+</html>
+<script type="text/javascript" src="./components/script.js"></script>
+<script type="text/javascript" src="./components/jquery/jquery-3.5.1.js"></script>
+<script>
+
+ $(function(){
+     console.log("ready");
+     var myarray = JSON.parse(sessionStorage.getItem("array"));
+     document.getElementById("img1").setAttribute("src","./pics/"+myarray[0]);
+     document.getElementById("img2").setAttribute("src","./pics/"+myarray[1]);
+     
+ });
+   
+</script>

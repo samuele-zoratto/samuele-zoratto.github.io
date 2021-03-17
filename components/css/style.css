@@ -1,0 +1,445 @@
+@charset "utf-8";
+/* CSS Document */
+@media only screen and (max-width: 1350px) {
+  body {
+    min-width: 1100px;
+  }
+}
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+ 
+}
+.white {
+  color: white;
+}
+h3 {
+	text-align: center;
+}
+h4 {
+}
+p {
+    padding: 0px 20px;
+    text-align: justify;
+}
+a {
+    text-decoration-line: none;
+}
+.wrapper {
+  min-height: 100vh;
+  /*background: #ccc;*/
+  display: flex;
+  flex-direction: column;
+  min-width: 100vh;
+}
+.header {
+  background: #2E2E2E;
+  /* color: #fff;*/
+  
+}
+.footer {
+  background: #2E2E2E;
+  display: flex;
+  flex-direction: row;
+}
+.footer > div {
+  font-size: 10px;
+  align-self: center;
+  text-align: center;
+  width: 100%;
+}
+.content {
+  display: flex;
+  flex: 1;
+}
+.columns {
+  display: flex;
+  flex: 1;
+}
+.main {
+  flex: 1;
+  order: 2;
+  background: #ccc;
+}
+.main-lipidmaps {
+  flex: 1;
+  order: 2;
+  background: #ccc;
+}
+.sidebar-first {
+  width: 10%;
+  background: #ccc;
+  order: 1;
+    display: flex;
+}
+.center {
+  text-align: center;
+}
+.sidebar-first > div{
+    background: grey;
+    border: solid 1px black;
+    height: 50px;
+    color: white;
+    align-self: center;
+    border-radius: 7px;
+    margin: -10px;
+    width: 100px;
+    box-shadow: 0px 0px 5px darkslategrey;
+}
+.sidebar-second {
+  width: 10%;
+  order: 3;
+  background: #ccc;
+    display: flex;
+    overflow: hidden;
+    flex-flow: row-reverse;
+}
+.sidebar-second > div{
+  width: 100px;
+    border: solid 1px black;
+    height: 50px;
+    background: grey;;
+    align-self: center;
+    color: white;
+    border-radius: 7px;
+    margin: -10px;
+    box-shadow: 0px 0px 5px darkslategrey;
+    
+}
+.text {
+  flex: 1;
+  order: 2;
+  font-size: 23px;
+  padding-bottom: 0px;
+  font-weight: bold;
+  text-align: center;
+  align-self: center;
+}
+.logo {
+  width: 15%;
+  /*background: #ccc;*/
+  order: 1;
+  padding-top: 5px;
+  padding-left: 5px;
+}
+.fancy_image {
+  width: 15%;
+  order: 3;
+  /*background: #ddd;*/
+  text-align: right;
+  padding-top: 5px;
+}
+.flex-container {
+  /* We first create a flex layout context */
+  display: flex;
+  /* Then we define the flow direction 
+     and if we allow the items to wrap 
+   * Remember this is the same as:
+   * flex-direction: row;
+   * flex-wrap: wrap;
+   */
+  flex-flow: wrap;
+    flex-direction: column;
+  /* Then we define how is distributed the remaining space */
+  justify-content: space-between;
+  padding: 0px;
+  margin: 0px;
+}
+.flex-container-exp_details{
+	flex-direction: row;
+}
+.flex-container-lipidmaps {
+  /* We first create a flex layout context */
+  display: flex;
+  /* Then we define the flow direction 
+     and if we allow the items to wrap 
+   * Remember this is the same as:
+   * flex-direction: row;
+   * flex-wrap: wrap;
+   */
+  flex-flow: wrap;
+  /* Then we define how is distributed the remaining space */
+  justify-content: space-between;
+  padding: 0px;
+  margin: 0px;
+	background: darkslategrey;
+	border-radius: 7px;
+	margin-bottom: 15px;
+	color: white;
+}
+.box {
+  padding: 5px;
+  margin: 5px;
+    /* here to change the number of elements */
+  flex: 1 0 23%;
+  text-align: center;
+}
+.lipidbox {
+  padding: 5px;
+  margin: 5px;
+  flex: 1;
+  text-align: center;
+}
+.image:hover {
+  border: solid red 1px;
+}
+.image:active{
+    box-shadow: 0 0 0 white;
+}
+#nextMass:active{
+    box-shadow: 0 0 0 white;
+}
+#previousMass:active{
+    box-shadow: 0 0 0 white;
+}
+#spectra {
+    text-align: center;
+    background-color: #ccc;
+    padding: 0px 5px 15px 5px;
+	
+}
+#spectra > img{
+	max-width:100%;
+	border-radius: 7px;
+    box-shadow: 0px 0px 5px darkslategrey;
+    
+}
+/* Create four equal columns that sits next to each other 
+.box {
+        display: flex;
+  padding: 0 4px;
+    border: solid red 1px;
+    text-align: center;
+}*/
+.box img {
+  margin: 2px;
+  width: 400px;
+  border: solid black 1px;
+  border-radius: 7px;
+  cursor: zoom-in;
+    box-shadow: 0px 0px 5px darkslategrey;
+}
+input[type=button], input[type=Submit], input[type=reset] {
+  background-color: lightgrey;
+  border: solid black 1px;
+  color: black;
+  text-decoration: none;
+	
+  padding: 5px 20px; 
+  cursor: pointer;
+	border-radius: 25px;
+	
+}
+input[type=Submit]:hover{
+	background-color: darkgrey;
+	color: white;
+}
+input[type=button]:hover{
+	background-color: darkgrey;
+	color: white;
+}
+#previousMass:hover{
+	background-color: darkgrey;
+	color: white;
+    cursor: pointer;
+}
+#nextMass:hover{
+	background-color: darkgrey;
+	color: white;
+    cursor: pointer;
+}
+.noselect{
+    cursor: default;
+    user-select: none;
+}
+.panel {
+    min-width: 150px;
+    border-radius: 7px;
+}
+
+
+
+.flag_toggle_panel {
+    background-color: darkslategrey;
+    color: white;
+    
+    font-weight: bold;
+    display: inline-block;
+    padding: 10px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border-bottom: 0px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 5px darkslategrey;
+}
+.flag_toggle_panel:hover {
+    background-color: gray;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px grey;
+}
+.flag_toggle_subpanel {
+    background-color: lightseagreen;
+    color: white;
+    font-weight: bold;
+    display: block;
+    padding: 10px;
+    border-radius: 7px;
+    border-bottom: 0px;
+    margin-top: 10px;
+    margin-right: 5px;
+    box-shadow: 0px 0px 5px darkslategrey;
+    text-align: center;
+}
+.flag_toggle_subpanel:hover {
+    background-color: skyblue;
+    cursor: pointer;
+    box-shadow: 0px 0px 5px grey;
+}
+
+.subpanel_slides {
+    border: solid 1px darkslategrey;
+    box-shadow: 0px 0px 5px darkslategrey;
+    border-top-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    padding: 15px;
+    margin-right: 5px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    
+    
+}
+.topRightAngle {
+    border-top-right-radius: 0px;
+    
+}
+.box_calib img{
+	width: 700px;
+}
+
+.limiter {
+  width: 100%;
+  /*margin: 0 auto;*/
+}
+
+.container-table100 {
+  width: 100%;
+  
+
+  display: flex;
+  /*align-items: center;*/
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px;
+}
+
+.wrap-table100 {
+  width: 80%;
+}
+
+table {
+  border-collapse: collapse;
+  background: white;
+  border-radius: 7px;
+  overflow: hidden;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+}
+table * {
+  
+}
+table td, table th {
+  padding-left: 8px;
+}
+table thead tr {
+  height: 35px;
+  background: #36304a;
+}
+table tbody tr {
+  height: 30px;
+}
+table tbody tr:last-child {
+  border: 10;
+}
+table td, table th {
+  text-align: left;
+}
+table td.l, table th.l {
+  text-align: right;
+}
+table td.c, table th.c {
+  text-align: center;
+}
+table td.r, table th.r {
+  text-align: center;
+}
+
+
+.table100-head th{
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.2;
+  font-weight: unset;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f5f5f5;
+}
+
+tbody tr {
+  font-size: 14px;
+  color: #808080;
+  line-height: 1.2;
+  font-weight: unset;
+}
+
+tbody tr:hover {
+  color: #555555;
+  background-color: #f5f5f5;
+ 
+}
+
+.column1 {
+  width: 40%;
+  padding-left: 40px;
+}
+
+.column2 {
+  width: 30%;
+}
+
+.column3 {
+  width: 30%;
+}
+
+.columnMasses {
+  width: 20%;
+  padding-left: 10px;
+}
+.columnMasses:hover {
+  cursor: pointer;
+}
+
+
+
+
+.subpanel {
+    border: solid 1px darkslategrey;
+    box-shadow: 0px 0px 5px darkslategrey;
+    border-top-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+    padding: 15px;
+    margin-right: 5px;
+    
+}
+
+.not_done_yet {
+    opacity: .4;
+}
+
+.not_done_yet:hover {
+    cursor: not-allowed;
+}
