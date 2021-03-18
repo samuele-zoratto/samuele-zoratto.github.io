@@ -25,7 +25,6 @@ function print_array(){
 }
 
 function clear_variables(){
-    console.log("I clear stuff, maybe...");
     window.sessionStorage.clear();
     print_array();
 }
